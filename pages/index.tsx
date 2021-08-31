@@ -1,8 +1,22 @@
+import React, {useEffect} from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
+import SomeComponent from '@components/SomeComponent';
+import useSomeCustomHooks from '@custom-hooks/useSomeCustomHooks';
+import SomeApi from '@api/SomeApi';
 
 export default function Home() {
+  
+  useSomeCustomHooks();
+  
+  useEffect(() => {
+    (async () => {
+      const someApi = new SomeApi();
+      console.log(await someApi.getSomeData());
+    })().then();
+  }, []);
+  
   return (
     <Container>
       <Head>
@@ -58,6 +72,7 @@ export default function Home() {
           </Logo>
         </a>
       </Footer>
+      <SomeComponent/>
     </Container>
   )
 }
