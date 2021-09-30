@@ -20,17 +20,20 @@
     "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
+      "@pages/*": [
+        "pages/*"
       ],
       "@api/*": [
         "src/api/*"
       ],
-      "@pages/*": [
-        "pages/*"
+      "@component/*": [
+        "src/component/*"
+      ],
+      "@type/*": [
+        "src/type/*"
+      ],
+      "@util/*": [
+        "src/util/*"
       ]
     }
   },

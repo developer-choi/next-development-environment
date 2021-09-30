@@ -2,8 +2,8 @@ import React, {useEffect} from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
-import SomeComponent from '@components/SomeComponent';
-import useSomeCustomHooks from '@utils/custom-hooks/useSomeCustomHooks';
+import SomeComponent from '@component/SomeComponent';
+import useSomeCustomHooks from '@util/custom-hooks/useSomeCustomHooks';
 import SomeApi from '@api/SomeApi';
 
 export default function Home() {
