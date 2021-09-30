@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
 import SomeComponent from '@components/SomeComponent';
-import useSomeCustomHooks from '@custom-hooks/useSomeCustomHooks';
+import useSomeCustomHooks from '@utils/custom-hooks/useSomeCustomHooks';
 import SomeApi from '@api/SomeApi';
 
 export default function Home() {
