@@ -9,11 +9,9 @@ import {GlobalStyle} from '@util/style/global';
  */
 export default function App({Component, pageProps}: AppProps) {
   return (
-      <>
-        <GlobalStyle/>
-        <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle/>
+      <Component {...pageProps} />
+    </ThemeProvider>
   );
 }
