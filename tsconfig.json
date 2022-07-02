@@ -34,6 +34,9 @@
       ],
       "@util/*": [
         "src/util/*"
+      ],
+      "@custom-hook/*": [
+        "src/util/custom-hook/*"
       ]
     }
   },
