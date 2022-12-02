@@ -9,7 +9,7 @@ yarn create next-app project-name -e https://github.com/developer-choi/next-deve
 <li>next: 11.1.2</li>
 <li>react: 17.0.2</li>
 <li>styled-components: 5.3.1</li>
-<li>typescript: 4.4.2</li>
+<li>typescript: 4.9.3</li>
 </ul>
 
 ## Note
