@@ -6,7 +6,6 @@ export interface SomeComponentProp {
 }
 
 export default function SomeComponent({}: SomeComponentProp) {
-  
   return (
     <Wrap>Hello World</Wrap>
   );
