@@ -8,12 +8,14 @@ import {GlobalStyle} from '@util/style/global';
  * https://github.com/vercel/next.js/blob/master/examples/with-styled-components/pages/_app.js
  */
 export default function App({Component, pageProps}: AppProps) {
+  //https://github.com/styled-components/styled-components/issues/3738
+  const ThemeProviderProxy: any = ThemeProvider;
+  const GlobalStyleProxy: any = GlobalStyle;
+
   return (
-    <>
-      <GlobalStyle/>
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
+    <ThemeProviderProxy theme={theme}>
+      <GlobalStyleProxy/>
+      <Component {...pageProps} />
+    </ThemeProviderProxy>
   );
 }

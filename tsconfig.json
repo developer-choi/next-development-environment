@@ -35,7 +35,8 @@
       "@util/*": [
         "src/util/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
