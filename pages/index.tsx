@@ -1,22 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
 import SomeComponent from '@component/SomeComponent';
-import useSomeCustomHooks from '@util/custom-hook/useSomeCustomHooks';
-import SomeApi from '@api/SomeApi';
 
 export default function Home() {
-  
-  useSomeCustomHooks();
-  
-  useEffect(() => {
-    (async () => {
-      const someApi = new SomeApi();
-      console.log(await someApi.getSomeData());
-    })().then();
-  }, []);
-  
   return (
     <Container>
       <Head>
